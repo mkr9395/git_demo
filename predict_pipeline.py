@@ -6,12 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-
-
-model = LitModule()
-trainer = pl.Trainer(logger=dvclive_logger)
-trainer.fit(model)
-
+from sklearn.preprocessing import StandardScaler
 
 from src.exception import CustomException
 from src.utils import load_object
