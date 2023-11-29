@@ -3,10 +3,12 @@ import os
 
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import GridSearchCV
+from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestClassifier
+
+
 
 from src.exception import CustomException
 from src.utils import load_object
